@@ -1,145 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Index</title>
-  <link rel="stylesheet" href="styles/main.css" type="text/css">
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Dataroot</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
-
-    <div class="nav">
-      <p class="px16 home uppercase">HOME</p>
-      <p class="px16 photoapp uppercase">PHOTOAPP</p>
-      <img src="images/logo-white.png" alt="logo-white" class="logo-white">
-      <p class="px16 design uppercase">DESIGN</p>
-      <p class="px16 download uppercase">DOWNLOAD</p>
-    </div>
-
-    <div class="h1">
-      <h1>YOUR LIFE , A PHOTO</h1>
-
-        <p class="px16 print">print your life in a simple photo</p>
-        <button class="button">
-          <p class="px12 button_text uppercase">GET STARTED</p>
-        </button>
-
-    </div>
-    <div class="logos">
-      <img src="images/logo-header-1.png" alt="logo-header-1.png" class="logo_header1">
-      <img src="images/logo-header-2.png" alt="logo-header-2.png" class="logo_header2">
-      <img src="images/logo-header-3.png" alt="logo-header-3.png" class="logo_header3">
-    </div>
-
-    </div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-content">
+        <div class="navigation">
+          <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+          <div class="header-menu">
+            <ul class="header-ul">
+              <li><a href="" class="menu-active">Аренда</a></li>
+              <li><a href="">Продажа</a></li>
+              <li><a href="">Посуточно</a></li>
+              <li><a href="">• • •  Еще</a></li>
+            </ul>
 
 
-  <div class="content">
+          </div>
+          <div class="header-login">
 
-    <div class='content1'>
-      <div class="div_content1">
-        <h2 class="h2 uppercase">Rappresent your life with a <br> simple photo</h2>
-        <p class="px12 p_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-sed do eiusmod tempor incididunt ut labore et dolore <br>
-magna aliqua. Ut <span class="span_bold">enim ad minim</span> veniam, quis <br>
-nostrud exercitation ullamco laboris nisi <br>
-ut aliquip ex ea commodo consequat.</p>
-        <button class="button button1">
-          <p class="px12 button_text1 uppercase">GET STARTED</p>
-        </button>
+            <button class="header-insert"><a href="index.html">Разместить объявление</a></button>
+
+            <a href="index.html" class="header-login-href">Войти</a>
+
+
+          </div>
+
+        </div>
+        <h1 class="header-h1">Поиcк недвижимости в Украине</h1>
+        <div class="header-search">
+          <div class="select">
+            <span class="select-span">Выберите город</span>
+            <select class=" select-form" name="select-city">
+              <option value="Киев" selected>Киев</option>
+              <option value="Львов">Львов</option>
+            </select>
+
+          </div>
+          <div class="header-checkbox">
+            <span>Кол-во комнат</span>
+            <div class="checkbox">
+            <input type="checkbox" name="checkbox1" id="checkbox-check1" checked>
+            <label for="checkbox-check1" class="checkboxs"><span>1</span></label>
+            <input type="checkbox" name="checkbox2" id="checkbox-check2" checked>
+            <label for="checkbox-check2" class="checkboxs"><span>2</span></label>
+            <input type="checkbox" name="checkbox3" id="checkbox-check3">
+            <label for="checkbox-check3" class="checkboxs"><span>3</span></label>
+            <input type="checkbox" name="checkbox4" id="checkbox-check4">
+            <label for="checkbox-check4"class="checkboxs"><span>4</span></label>
+            <input type="checkbox" name="checkbox5" id="checkbox-check5">
+            <label for="checkbox-check5"><span>5+</span></label>
+          </div>
+
+          </div>
+          <div class="search">
+            <a href="#" class="search-button">Перейти к поиску</a>
+
+          </div>
+
+        </div>
       </div>
 
-    </div>
+    </header>
+    <div class="content">
+      <div class="content-near-metro">
+        <div class="near-metro">
+            <div class="select-type">
+          <h2>Недвижимость возле метро</h2>
 
-    <div class='content2'>
-      <div class="div_content2">
-        <h2 class="h2 uppercase">Design</h2>
-        <p class="px12 p_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
-sed do eiusmod tempor incididunt ut labore et dolore <br>
-magna aliqua. Ut <span class="span_bold">enim ad minim</span> veniam, quis <br>
-nostrud exercitation ullamco laboris nisi <br>
-ut aliquip ex ea commodo consequat.</p>
-        <button class="button button2">
-          <p class="px12 button_text2 uppercase">LEARN MORE</p>
-        </button>
-        <p class="px12 dark">01/05</p>
-         <div class="angles">
-           <img class="angle-left" src="images/left.png" alt="Стрелочка влево">
-           <img class="angle-right" src="images/right.png" alt="Стрелочка вправо">
-         </div>
+            <ul class="select-flats">
+              <li><a href="" class="flats-active">Квартиры</a></li>
+              <li><a href=""></a>Дома</li>
+              <li><a href=""></a>Офисы</li>
+            </ul>
+            <select name="select-metro" class="select-form select-metro">
+              <option value="Политехнический институт" selected><span class="metro">Политехнический институт</span></option>
+              <option value="Золотые ворота">Золотые ворота</option>
+            </select>
+            <a href="#" class="primary btn-large">
+                Показать результаты поиска
+            </a>
+          </div>
         </div>
 
       </div>
+      <div class="content-best">
+            <h2>Лучшие предложения в Киеве</h2>
+
+        <div class="best-cards">
+            <div class="best-card">
 
 
-
-
-    <div class='content3'>
-      <div class="angles2">
-        <img class="angle-left" src="images/left.png" alt="Стрелочка влево">
-        <img class="angle-right" src="images/right.png" alt="Стрелочка вправо">
-      </div>
-      <div class="content3_logo">
-        <img src="images/logo-green.png" alt="logo-green.png" class="logo-green">
-        <p class="px16 uppercase our_community">OUR COMMUNITY</p>
-        <p class="px10">Lorem ipsum dolor sit <br> amet, consectetur <br> <span>adipiscing elit, </span></p>
-        <div class="bus">
-          <img src="images/bus.png" alt="bus.png">
+               <img src="img/card/images/Rectangle 11.png" alt="room"><br>
+                <span class="prise">7 800 грн.</span>
+                <img src="img/card/Group 3.svg" alt="check">
+                <span class="best-info">2 комн.  •  48 кв. метров</span>
+                <img src="img/Rectangle 430.svg" alt="•">
+                <span class="best-metro">Политехнический институт</span>
+            </div>
+            <div class="best-card">
+                <img src="img/card/images/Rectangle 11.png" alt="room"><br>
+                <span class="prise">10 200 грн.</span>
+                <img src="img/card/Group 3.svg" alt="check">
+                <span class="best-info">1 комн.  •  30 кв. метров</span>
+                <img src="img/Rectangle 430.svg" alt="•">
+                <span class="best-metro">Политехнический институт</span>
+            </div>
+            <div class="best-card">
+                <img src="img/card/images/Rectangle 11.png" alt="room"><br>
+                <span class="prise">6 900 грн.</span>
+                <img src="img/card/Group 3.svg" alt="check">
+                <span class="best-info">2 комн.  •  30 кв. метров</span>
+                <img src="img/Rectangle 430.svg" alt="•">
+                <span class="best-metro">Политехнический институт</span>
+            </div>
+            <div class="best-card">
+                <img src="img/card/images/Rectangle 11.png" alt="room"><br>
+                <span class="prise">9 000 грн.</span>
+                <img src="img/card/Group 3.svg" alt="check">
+                <span class="best-info">2 комн.  •  30 кв. метров</span>
+                <img src="img/Rectangle 430.svg" alt="•">
+                <span class="best-metro">Политехнический институт</span>
+            </div>
         </div>
-        <div class="tree">
-          <img src="images/tree.png" alt="tree.png">
+        <a href="#" class="to-smt">
+            Смотреть лучшие ценовые предложения
+        </a>
+
+      </div>
+      <div class="content-last">
+        <h2>Последние обьявления в Киеве</h2>
+        <ul class="select-flats">
+          <li><a href="" class="flats-active">Квартиры</a></li>
+          <li><a href=""></a>Дома</li>
+          <li><a href=""></a>Офисы</li>
+        </ul>
+
+    <div class="best-cards">
+        <div class="best-card">
+
+
+           <img src="img/room1.png" alt="room"><br>
+            <span class="prise">11 800 грн.</span>
+            <img src="img/card/Group 3.svg" alt="check">
+            <span class="best-info">2 комн.  •  48 кв. метров</span>
+            <img src="img/Rectangle 430.svg" alt="•">
+            <span class="best-metro">Политехнический институт</span>
         </div>
-      </div>
-      </div>
-
-
-
-    <div class='content4'>
-      <div class="content4_content">
-        <p class="uppercase px24">subscribe to us community
-        </p>
-        <div class="email_main">
-        <input type="text" name="email" value="YOUR EMAIL" class="email">
-        <button type="button" name="button" class="button4">
-          <img src="images/check.png" alt="check.png" class="image_check">
-        </button>
-      </div>
-      </div>
+        <div class="best-card">
+            <img src="img/room2.png" alt="room"><br>
+            <span class="prise">15 000 грн.</span>
+            <img src="img/card/Group 3.svg" alt="check">
+            <span class="best-info">3 комн.  •  100 кв. метров</span>
+            <img src="img/Rectangle 430.svg" alt="•">
+            <span class="best-metro">Шулявская</span>
+        </div>
+        <div class="best-card">
+            <img src="img/room3.png" alt="room"><br>
+            <span class="prise">11 800 грн.</span>
+            <img src="img/card/Group 3.svg" alt="check">
+            <span class="best-info">1 комн.  •  30 кв. метров</span>
+            <img src="img/Rectangle 431.svg" alt="•">
+            <span class="best-metro">Контрактовая площадь</span>
+        </div>
+        <div class="best-card">
+            <img src="img/room4.png" alt="room"><br>
+            <span class="prise">7 000 грн.</span>
+            <img src="img/card/Group 3.svg" alt="check">
+            <span class="best-info">2 комн.  •  40 кв. метров</span>
+            <img src="img/Rectangle 430.svg" alt="•">
+            <span class="best-metro">просп. Победы, 18А</span>
+        </div>
     </div>
+    <a href="#" class="to-smt">
+        Смотреть лучшие ценовые предложения
+    </a>
 
-    <div class='content5'>
-      <p class="px20 uppercase download_content5">DOWNLOAD IT</p>
-      <p class="px12 uppercase content5_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-         sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.
-         Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> <span> laboris
-          nisi ut aliquip ex ea commodo consequat.</span></p>
-      <div class="content5_logos">
-        <div class="div_apple">
-        <button class="button_green button_apple uppercase">
-          <span class="span_apple">APPLE STORE </span></button>
-        <button class="div_logo">
-          <img src="images/logo-apple.png" alt="logo-apple.png" class="logo_apple">
-        </button>
       </div>
-      <div class="android">
-        <button class="button_green uppercase">
-          <span class="span_android">PLAY STORE</span></button>
-        </button>
-        <button class="div_logo">
-          <img src="images/logo-android.png" alt="logo-android.png" class="logo_android">
-        </button>
+      <div class="content-telegram">
+
+      </div>
+      <div class="content-blog">
+
       </div>
 
 
+
+
+
+    </div>
+ </div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-info">
+      <span class="footer-info-head">Metrovka</span>
+      <ul class="footer-info-list">
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Пресса о нас</a></li>
+        <li><a href="#">Пользовательское соглашение</a></li>
+        <li><a href="#">Карта сайта</a></li>
+        <li><a href="#">Помощь</a></li>
+      </ul>
+
+    </div>
+    <div class="footer-partner">
+      <span class="footer-info-head">Партнёрство</span>
+      <ul class="footer-info-list">
+        <li><a href="#">Как разместить обьявление</a></li>
+        <li><a href="#">Инструменты продвижения</a></li>
+        <li><a href="#">Правила заполнения объявлений</a></li>
+      </ul>
+
+
+    </div>
+    <div class="footer-more">
+      <span class="footer-info-head">Узнайте больше</span>
+      <ul class="footer-info-list">
+        <li><a href="#">Бонусная программа Bonus+</a></li>
+        <li><a href="#">Telegram Metrovka Bot</a></li>
+        <li><a href="#">Как работает поиск</a></li>
+        <li><a href="#">Как пользоваться избранным</a></li>
+      </ul>
+
+
+    </div>
+    <div class="footer-contacts">
+      <span class="footer-info-head">Контакты</span>
+      <div class="contacts-logos"></div>
+      <span class="footer-info-list">ул. Жилянская, 37</span> <br>
+      <span class="footer-info-adress">Киев, 01033</span>
+      <a href="mailto:info@metrovka.ua" class="footer-info-list">info@metrovka.ua</a>
+      <a href="#" class="primary application">Отправить заявку</a>
     </div>
 
   </div>
-  <div class="footer">
-    <p class="px14">CREDITS <span class="green_span">| </span> PRIVACY <span class="green_span">| </span> OUR TEAMS <br>
-      Copyright by phototime - all right reserved</p>
-    <img src="images/logo-green-footer.png" alt="logo-green-footer.png" class="logo_green_footer">
+  <a href="index.html"><img src="img/logo-grey.svg" alt="Logo" class="image-logo"></a>
 
-  </div>
+</footer>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
